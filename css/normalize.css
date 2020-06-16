@@ -433,10 +433,15 @@ th {
   -moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
   border-radius: 15px;
+
+  background: linear-gradient(-45deg, #222831, #393e46);
+	background-size: 600% 600%;
+	animation: gradient 30s ease infinite;
+
 }
 
 body {
-	background: linear-gradient(-45deg, #222831, #393e46, #32e0c4);
+	background: linear-gradient(-45deg, #32e0c4, #222831, #393e46);
 	background-size: 600% 600%;
 	animation: gradient 30s ease infinite;
 }
@@ -445,6 +450,9 @@ body {
   background-color: #142138;
   border-color: #142138;
   color: white;
+  background: linear-gradient(-45deg, #222831, #393e46);
+	background-size: 600% 600%;
+	animation: gradient 30s ease infinite;
 }
 
 @keyframes gradient {
