@@ -445,9 +445,6 @@ body {
   background-color: #222831;
   border-color: #222831;
   color: white;
-  background: linear-gradient(-45deg, #222831, #393e46);
-	background-size: 600% 600%;
-	animation: gradient 30s ease infinite;
 }
 
 @keyframes gradient {
