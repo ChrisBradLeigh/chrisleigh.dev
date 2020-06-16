@@ -37,7 +37,7 @@
   <div class="container">
     <div class="row">
       <div class="twelve columns" style="margin-top: 20%; text-align: center;">
-        <h5 style="color: #FDFFFC; font-family: mr_dafoeregular; letter-spacing: 3px;" id="datetime"></h5>
+        <h5 style="color: #FDFFFC; font-family: caveatregular; letter-spacing: 3px;" id="datetime"></h5>
       </div>
     </div>
     <div class="row">
@@ -69,8 +69,11 @@
 
   <!-- Date time stuff -->
   <script>
-    var dt = new Date();
-    document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();          
+    function time(){
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+    }
+    var t = setTimeout(time, 500);
   </script>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
