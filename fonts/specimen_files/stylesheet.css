@@ -3,15 +3,6 @@
 
 
 @font-face {
-    font-family: 'mr_dafoeregular';
-    src: url('mrdafoe-regular-webfont.woff2') format('woff2'),
-         url('mrdafoe-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'caveatregular';
     src: url('caveat-regular-webfont.woff2') format('woff2'),
          url('caveat-regular-webfont.woff') format('woff');
