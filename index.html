@@ -72,8 +72,8 @@
     function time(){
       var dt = new Date();
       document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+      var t = setTimeout(time, 500);
     }
-    var t = setTimeout(time, 500);
   </script>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
