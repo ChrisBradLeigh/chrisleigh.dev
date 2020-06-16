@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>chrisleigh.dev</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body style="background-color: #011627;">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%; text-align: center;">
+        <h5 style="color: #FDFFFC; font-family: mr_dafoeregular; letter-spacing: 3px;" id="datetime"></h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns" style="text-align: center; margin-top: -10px;">
+        <h1 style="font-family: mr_dafoeregular; color: #FDFFFC;">chrisleigh . dev</h1>
+      </div>
+    </div>
+    <div id="pannels" style="margin-top: 4%;">
+      <div class="row">
+        <div class="eight columns" style="margin-top: -10px;">
+          <h4 style="color: #FDFFFC; font-family: mr_dafoeregular; letter-spacing: 5px; text-align: center;">links and cool stuff</h4>
+          <pre><code>
+
+          </code></pre>
+        </div>
+        <div class="four columns" style="margin-top: -10px;">
+          <h4 style="color: #FDFFFC; font-family: mr_dafoeregular; letter-spacing: 5px; text-align: center;">short</h4>
+          <pre><code>
+            <input style="margin-left: -87px; color: black;" class="u-full-width" type="text" placeholder="Super long URL" id="longurl">
+            <input class="button-primary" type="button" value="Short and Copy" style="margin-left: -38px; margin-bottom: 0px;">
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Date time stuff -->
+  <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();          
+  </script>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
