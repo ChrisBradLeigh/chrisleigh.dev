@@ -427,8 +427,8 @@ th {
 }
 
 #pannels pre {
-  background-color: #222831;
-  border-color: #222831;
+  background-color: #393e46;
+  border-color: #393e46;
   -webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
@@ -436,14 +436,14 @@ th {
 }
 
 body {
-	background: linear-gradient(-45deg, #32e0c4, #222831, #393e46);
+	background: linear-gradient(-45deg, #32e0c4, #393e46);
 	background-size: 600% 600%;
 	animation: gradient 30s ease infinite;
 }
 
 #pannels code{
-  background-color: #222831;
-  border-color: #222831;
+  background-color: #393e46;
+  border-color: #393e46;
   color: white;
 }
 
