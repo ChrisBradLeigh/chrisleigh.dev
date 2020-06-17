@@ -436,7 +436,7 @@ th {
 }
 
 body {
-	background: linear-gradient(-45deg, #ff5b6b, #5bffde, #bdff5b);
+	background: linear-gradient(-45deg, #ff6b68, #ff9068, #ff68ac);
 	background-size: 600% 600%;
 	animation: gradient 30s ease infinite;
 }
