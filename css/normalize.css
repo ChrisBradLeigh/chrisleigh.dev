@@ -435,28 +435,10 @@ th {
   border-radius: 15px;
 }
 
-body {
-	background: linear-gradient(-45deg, #69ffad, #69beff, #8769ff);
-	background-size: 600% 600%;
-	animation: gradient 30s ease infinite;
-}
-
 #pannels code{
   background-color: #393e46;
   border-color: #393e46;
   color: white;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-  }
-	50% {
-		background-position: 100% 50%;
-  }
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 #home {
