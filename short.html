@@ -30,6 +30,47 @@
 
 </head>
 
+<script>
+  function onloadStuff() {
+    document.getElementById("copythishit").innerHTML = "https://short.chrisleigh.dev/" + window.location.href.split('=')[1];
+  }
+</script>
+
+<!-- document.getElementById("copythishit").innerHTML = "https://short.chrisleig.dev/" + window.location.href.split("/')[4]; -->
+
+<body onload="onloadStuff()">
+
+<script>
+  function copy() {
+    const el = document.getElementById("copythishit").innerHTML;
+    fallbackCopyTextToClipboard(el)
+  }
+  function fallbackCopyTextToClipboard(text) {
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+
+    // Avoid scrolling to bottom
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+      console.log('Fallback: Copying text command was ' + msg);
+    } catch (err) {
+      console.error('Fallback: Oops, unable to copy', err);
+    }
+
+    document.body.removeChild(textArea);
+  }
+</script>
+
+
 <!-- Background stuff -->
 
 <body style="background-color: #264653;">
@@ -153,6 +194,16 @@
           <h1 style="font-family: mr_dafoeregular; color: #FDFFFC; text-shadow: 4px 4px 10px rgba(0,0,0,0.62)">chrisleigh . dev</h1>
         </div>
       </div>
+      <form>
+        <div class="row">
+          <div class="twelve columns">
+            <!-- <input class="u-full-width" id="exampleEmailInput"> -->
+            <pre><code id="copythishit" style="text-align: center;">https://chrisleigh.dev</code></pre>
+            <input class="button-primary" type="button" value="Copy to Clipboard" onclick="copy()"
+              style="background-color: darkcyan; border-color: darkcyan; margin-left: auto; margin-right: auto; display: block;">
+          </div>
+      </form>
+  
       <!-- <div id="pannels" style="margin-top: 4%;">
         <div class="row">
           <div class="eight columns" style="margin-top: -10px;">
